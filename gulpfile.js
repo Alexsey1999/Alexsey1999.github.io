@@ -25,7 +25,10 @@ var path = {
         'src/css/**/*.css'
     ],
     sass: 'src/scss/**/*.scss',
-    js: 'src/js/**/*.js',
+    js: [
+        'src/js/jquery-3.4.1.js',
+        'src/js/**/*.js'
+    ],
     img: 'src/images/**/*',
     fonts: 'src/fonts/**/*'
 };
@@ -72,7 +75,7 @@ gulp.task('watch', ['build'], function(){
         server: {
             baseDir: "./"
         },
-        port: 8000,
+        port: 8082,
         open: true
     });
 
