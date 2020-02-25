@@ -22,6 +22,8 @@ var path = {
     src: 'src',
     css: [
         'src/css/reset.css',
+        'src/css/header.css',
+        'src/css/section1.css',
         'src/css/**/*.css'
     ],
     sass: 'src/scss/**/*.scss',
