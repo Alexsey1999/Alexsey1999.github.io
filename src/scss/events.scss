@@ -1,8 +1,11 @@
 .events {
     margin-top: 85px;
+    @media (max-width: 1200px) {
+        margin-top: 50px;
+    }
     &__row {
         color: #fff;
-        margin: 0px 0px 45px 0px;
+        margin: 0px 0px 35px 0px;
     }
 
     &__block {
@@ -139,5 +142,6 @@
         font-size: 14px;
         font-weight: 300;
         color: #242424;
+        margin: 0px 0px 60px 0px;
     }
 }

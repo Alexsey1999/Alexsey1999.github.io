@@ -1,0 +1,112 @@
+.award {
+    min-height: 800px;
+    background-size: 100% 90%;
+    background-position: 0 70px;
+    background-repeat: no-repeat;
+    @media (max-width: 992px) {
+        min-height: 700px;
+    }
+    @media (max-width: 768px) {
+        background-size: 0;
+        background: #4B4D4F;
+        min-height: 570px;
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__column {
+        @media (max-width: 992px) {
+            &:nth-child(1) {
+                justify-self: end;
+            }
+        }
+        @media (max-width: 768px) {
+            &:nth-child(1) {
+                justify-self: start;
+                padding-top: 20px;
+            }
+        }
+        &:nth-child(2) {
+            display: grid;
+            padding-top: 240px;
+            padding-left: 30px;
+            @media (max-width: 992px) {
+                padding-top: 80px;
+                padding-left: 0;
+                .award__title,
+                .award__btn {
+                    justify-self: start;
+                }
+            }
+            @media (max-width: 768px) {
+                padding-top: 20px;
+                padding-bottom: 50px;
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__img {
+        margin-top: 15px;
+        @media (max-width: 992px) {
+            width: 150px;
+        }
+    }
+
+    &__title {
+        color: #fff;
+        justify-self: flex-end;
+        margin: 0px 0px 12px 0px;
+        @media (max-width: 768px) {
+            font-size: 32px;
+        }
+
+    }
+
+    &__description {
+        line-height: 1.4;
+        text-align: right;
+        p:first-child {
+            padding-bottom: 10px;
+        }
+        p:nth-child(2) {
+            padding-bottom: 10px;
+        }
+        p:last-child {
+            padding-bottom: 30px;
+        }
+        @media (max-width: 992px) {
+            padding-right: 0;
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            padding-right: 0;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        display: inline-block;
+        padding: 15px 25px;
+        text-decoration: none;
+        background-color: #90d23d;
+        border-radius: 15px;
+        justify-self: flex-end;
+        span {
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+    }
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
