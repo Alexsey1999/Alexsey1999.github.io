@@ -3,6 +3,10 @@
     background-size: 100% 90%;
     background-position: 0 70px;
     background-repeat: no-repeat;
+    margin-bottom: 120px;
+    @media (max-width: 1200px) {
+        margin-bottom: 60px;
+    }
     @media (max-width: 992px) {
         min-height: 700px;
     }
