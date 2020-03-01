@@ -318,6 +318,82 @@
                 </div>
             </div>
         </section>
+        <section class="past-events">
+            <div class="past-events__wrapper">
+                <div class="past-events__column">
+                    <div class="past-events__title title">Past Events</div>
+                    <div class="past-events__descr text text-black">Check out the photos of our previous events where we rocked with a lot of Famous and<br> enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)</div>
+                </div>
+                <div class="past-events__column">
+                    <div class="past-events__img">
+                        <a href="#">
+                            <img src="dist/images/past-events/01.png" alt="past-events-image">
+                        </a>
+                    </div>
+                    <div class="past-events__img">
+                        <a href="#">
+                            <img src="dist/images/past-events/02.png" alt="past-events-image">
+                        </a>
+                    </div>
+                    <div class="past-events__img">
+                        <a href="#">
+                            <img src="dist/images/past-events/03.png" alt="past-events-image">
+                        </a>
+                    </div>
+                    <div class="past-events__img">
+                        <a href="#">
+                            <img src="dist/images/past-events/04.png" alt="past-events-image">
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <div class="past-events__btn btn">
+                    <a href="#">
+                        <span>View More</span>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="map overlay">
+            <div id="map">
+            </div>
+            <div class="map__wrapper">
+
+                <div class="map__row">
+                    <div class="map__column">
+                        <div class="map__image">
+                            <img src="dist/images/map/map-image.png" alt="map-image">
+                        </div>
+                        <div class="map__address">Lorem Ipsum Avenue, 420/2 elm<br> street, Melbourne, Sydney - 2122,<br> Kingdom of Australia</div>
+                        <a href="#" class="view-map-btn btn">View Map</a>
+                    </div>
+                    <div class="map__column">
+                        <form class="map__form form" method="post" action="#" enctype="multipart/form-data">
+                            <input type="email" placeholder="Your email" class="form__field">
+                            <textarea  name="map-message" placeholder="Type your message" id="form__textarea"></textarea>
+                            <button class="map__btn btn btn-black" type="submit">
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function initMap() {
+                  var uluru = {lat: 58.5856442, lng: 49.5308426};
+                  var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 6, center: uluru});
+                  var marker = new google.maps.Marker({position: uluru, map: map});
+                }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv_ILTqqwNm-lqGcePgWFKenIwWvmCJ0c&callback=initMap">
+            </script>
+        </section>
+        <footer class="footer">
+            <h1>hello</h1>
+        </footer>
     </main>
     <script src="dist/js/all.js"></script>
 </body>

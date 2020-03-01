@@ -6,6 +6,13 @@
     background-size: 100% 93%;
     min-height: 750px;
     background-position: 0 30px;
+    margin-bottom: 80px;
+    @media (max-width: 1200px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 992px) {
+        margin: 0px 0px 10px 0px;
+    }
 
     @media (max-width: 768px) {
         background-size: 0;
@@ -19,7 +26,6 @@
 
     &__block {
         text-align: center;
-
     }
 
     &__title {
