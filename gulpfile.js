@@ -24,11 +24,21 @@ var path = {
         'src/css/reset.css',
         'src/css/header.css',
         'src/css/section1.css',
+        'src/css/info.css',
+        'src/css/events.css',
+        'src/css/award.css',
+        'src/css/speakers.css',
+        'src/css/sponsors.css',
+        'src/css/past-events.css',
+        'src/css/map.css',
+        'src/css/footer.css',
         'src/css/**/*.css'
     ],
     sass: 'src/scss/**/*.scss',
     js: [
         'src/js/jquery-3.4.1.js',
+        'src/js/header.js',
+        'src/js/map.js',
         'src/js/**/*.js'
     ],
     img: 'src/images/**/*',

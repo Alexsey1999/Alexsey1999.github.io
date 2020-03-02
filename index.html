@@ -366,7 +366,7 @@
                             <img src="dist/images/map/map-image.png" alt="map-image">
                         </div>
                         <div class="map__address">Lorem Ipsum Avenue, 420/2 elm<br> street, Melbourne, Sydney - 2122,<br> Kingdom of Australia</div>
-                        <a href="#" class="view-map-btn btn">View Map</a>
+                        <span class="view-map-btn btn">View Map</span>
                     </div>
                     <div class="map__column">
                         <form class="map__form form" method="post" action="#" enctype="multipart/form-data">
@@ -392,9 +392,36 @@
             </script>
         </section>
         <footer class="footer">
-            <h1>hello</h1>
+            <div class="footer__row">
+                <div class="footer__column">
+                    <div class="footer__socials">
+                        <div class="footer__social"><img src="dist/images/footer/facebook.png" alt="facebook"></div>
+                        <div class="footer__social"><img src="dist/images/footer/twitter.png" alt="twitter"></div>
+                        <div class="footer__social"><img src="dist/images/footer/linkedin.png" alt="linkedin"></div>
+                        <div class="footer__social"><img src="dist/images/footer/google-plus.png" alt="google-plus"></div>
+                        <div class="footer__social"><img src="dist/images/footer/tumblr.png" alt="tumblr"></div>
+                    </div>
+                    <div class="footer__description text">
+                        <p>Hope we see you at the event!</p>
+                        <p>All Rights Reserved. Envato Bangladesh © 2015</p>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <span class="footer__up-button">
+                        <img src="dist/images/footer/Go-Up-Button.png" alt="up-button">
+                    </span>
+                </div>
+            </div>
         </footer>
     </main>
     <script src="dist/js/all.js"></script>
+    <script>
+         $('.footer__up-button').click(function () {
+            $("html, body").animate({
+             scrollTop: 0
+            }, 600);
+            return false;
+        });
+    </script>
 </body>
 </html>
